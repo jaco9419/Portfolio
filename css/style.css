@@ -380,12 +380,12 @@ header {
   text-align: center;
 }
 
-.section__subtitle--work a {
+.section__link--work {
   text-decoration: none;
   color: var(--clr-light);
 }
 
-.section__subtitle--work a:hover {
+.section__link--work:hover {
   text-decoration: underline;
   opacity: 0.7;
 }
