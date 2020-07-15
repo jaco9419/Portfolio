@@ -141,8 +141,8 @@ header {
 }
 
 .logo {
-  max-width: 100px;
-  margin: 5px;
+  max-width: 80px;
+  margin: 0;
 }
 
 .nav {
@@ -172,7 +172,7 @@ header {
 
 .nav__link {
   color: inherit;
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-regular);
   font-size: var(--fs-h3);
   text-decoration: none;
 }
@@ -378,6 +378,16 @@ header {
   background-color: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
+}
+
+.section__subtitle--work a {
+  text-decoration: none;
+  color: var(--clr-light);
+}
+
+.section__subtitle--work a:hover {
+  text-decoration: underline;
+  opacity: 0.7;
 }
 
 .portfolio {
