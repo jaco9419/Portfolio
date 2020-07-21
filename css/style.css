@@ -14,7 +14,7 @@
 
   --clr-light: #fff;
   --clr-dark: #303030;
-  --clr-accent: #16e0bd;
+  --clr-accent: #a6d3a0;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -246,6 +246,7 @@ header {
 /*Intro Section*/
 .intro {
   position: relative;
+  padding-top: 1.5em;
 }
 
 .intro__img {
@@ -253,13 +254,14 @@ header {
 }
 
 .section__subtitle--intro {
-  display: inline-block;
+  display: block;
 }
 
 @media (min-width: 600px) {
   .intro {
     display: grid;
     width: min-content;
+    height: 70vh;
     margin: 0 auto;
     grid-column-gap: 1em;
     grid-template-areas:
