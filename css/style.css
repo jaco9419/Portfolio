@@ -143,6 +143,7 @@ header {
 .logo {
   max-width: 80px;
   margin: 0;
+  z-index: 1;
 }
 
 .nav {
