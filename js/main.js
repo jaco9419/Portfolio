@@ -18,8 +18,6 @@ navLinks.forEach((link) => {
 //Handle data for portfolio items
 
 const portfolio = document.querySelector('.portfolio');
-const a = document.createElement('a');
-const p = document.createElement('p');
 
 portfolioItems.map(item => {
   portfolio.innerHTML += `
@@ -29,25 +27,16 @@ portfolioItems.map(item => {
           target="_blank"
         >
           <p class="portfolio__description">
-            Netflix Land Page<br /><br />HTML, CSS, Javascript
+            ${item.title}<br /><br />${item.technologies}
           </p>
           <img
             src=${item.src}
-            alt="Netflix-Land-Page Project"
+            alt=${item.title}
             class="portfolio__img"
           />
         </a>
   `
 })
-
-//a.innerHTML = `<p>${portfolioItems[0].href}</p>`
-
-// a.setAttribute('href', portfolioItems[0].href);
-// a.setAttribute('class', 'portfolio__item');
-// a.setAttribute('target', '_blank');
-// p.setAttribute('class', 'portfolio__description');
-// a.appendChild(p);
-//portfolio.appendChild(a);
 
 //Typing Effect
 
