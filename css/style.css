@@ -450,11 +450,16 @@ header {
   border-radius: 5px;
   padding: .2rem .4rem;
   transition: .25s;
+  text-decoration: none;
 }
 
 .portfolio__links a:hover {
   color: #000;
   background-color: var(--clr-accent);
+}
+
+.portfolio__links a:focus {
+  outline: none;
 }
 
 .portfolio__img {

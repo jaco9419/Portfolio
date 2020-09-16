@@ -19,54 +19,38 @@ navLinks.forEach((link) => {
 
 const portfolio = document.querySelector('.portfolio');
 
-// portfolioItems.map(item => {
-//   portfolio.innerHTML += `
-//   <a
-//           href=${item.href}
-//           class="portfolio__item"
-//           target="_blank"
-//         >
-//           <p class="portfolio__description">
-//             ${item.title}<br /><br />${item.technologies}
-//           </p>
-//           <img
-//             src=${item.src}
-//             alt=${item.title}
-//             class="portfolio__img"
-//           />
-//         </a>
-//   `
-// })
-
 portfolioItems.map(item => {
     let string = '';
     string += `
-    <div
-            
-            class="portfolio__item"
-            
-          >
+        <div class="portfolio__item">
             <p class="portfolio__description">
-              <span class="underline">${item.title}</span><br /><br /><span class="technologies">${item.technologies}</span><br />
-              
+              <span class="underline">${item.title}</span>
+              <br /><br />
+              <span class="technologies">${item.description}</span><br />
             </p>
-            <div class="portfolio__links">`
+        <div class="portfolio__links">`
      
     if (item.codepen) {
         string += `
-        <a class="portfolio__link" href=${item.codepen} target="_blank"><i class="fab fa-codepen"></i></a>
+        <a class="portfolio__link" href=${item.codepen} target="_blank">
+            <i class="fab fa-codepen"></i>
+        </a>
         `
     }
 
     if (item.github) {
         string += `
-        <a class="portfolio__link" href=${item.github} target="_blank"><i class="fab fa-github"></i></a>
+        <a class="portfolio__link" href=${item.github} target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
         `
     }
 
     if (item.page) {
         string += `
-        <a class="portfolio__link" href=${item.page} target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        <a class="portfolio__link" href=${item.page} target="_blank">
+            <i class="fas fa-external-link-alt"></i>
+        </a>
         `
     } 
             
