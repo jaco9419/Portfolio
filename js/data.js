@@ -1,5 +1,12 @@
 export const portfolioItems = [
     {
+        page: 'https://youtubeclone-byjorge.netlify.app/',
+        github: 'https://github.com/jaco9419/Youtube-Clone-2',
+        title: 'Youtube Clone',
+        description: 'React, Axios, Material UI, API',
+        src: 'img/13.PNG',
+    },
+    {
         page: 'https://jorge-caceres-tp.netlify.app/',
         github: 'https://github.com/jaco9419/tu-vivero',
         title: 'Tu Vivero',
